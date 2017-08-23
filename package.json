@@ -1,0 +1,16 @@
+{
+  "name": "dz-test",
+  "version": "1.0.0",
+  "description": "Landing page developed for testing purposes.",
+  "main": "index.js",
+  "author": "João A. P. Sieben",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

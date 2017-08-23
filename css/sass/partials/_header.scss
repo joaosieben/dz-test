@@ -1,0 +1,45 @@
+header {
+  background: $theme-white;
+  width: 100%;
+
+  .wrapper {
+    max-width: 62.5em;
+    min-height: 9.375em;
+    margin: 0 auto;
+
+    .logo {
+      display: inline-block;
+      padding: 4.375em 0;
+    }
+
+    nav {
+      display: inline-block;
+      float: right;
+      padding: 4.375em 0;
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      ul {
+        li {
+          display: inline-block;
+
+          a {
+            text-transform: uppercase;
+          }
+
+          ul {
+            li {
+              a {
+                text-transform: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
