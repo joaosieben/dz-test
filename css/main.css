@@ -403,10 +403,11 @@ header .wrapper {
   max-width: 62.5em;
   min-height: 9.375em;
   margin: 0 auto;
+  border-bottom: 0.375em solid #38c1c8;
 }
 header .wrapper .logo {
   display: inline-block;
-  padding: 4.375em 0;
+  padding: 2.188em 0 0;
 }
 header .wrapper nav {
   display: inline-block;
@@ -423,6 +424,10 @@ header .wrapper nav ul li {
 }
 header .wrapper nav ul li a {
   text-transform: uppercase;
+  text-decoration: none;
+  font-size: .875em;
+  color: #656565;
+  font-weight: 700;
 }
 header .wrapper nav ul li ul li a {
   text-transform: none;
@@ -430,6 +435,8 @@ header .wrapper nav ul li ul li a {
 
 body {
   background: #e7e7e0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -462,6 +469,11 @@ h2,
 h3,
 p {
   color: #656565;
+}
+
+#content {
+  max-width: 62.5em;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */

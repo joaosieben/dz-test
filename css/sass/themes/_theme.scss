@@ -1,5 +1,7 @@
 body {
   background: $theme-gray;
+  font-family: $roboto;
+  font-weight: $regular;
 }
 
 h1 {
@@ -32,4 +34,9 @@ h2,
 h3,
 p {
   color: $dark-gray;
+}
+
+#content {
+  max-width: 62.5em;
+  margin: 0 auto;
 }

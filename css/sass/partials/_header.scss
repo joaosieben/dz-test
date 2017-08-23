@@ -6,10 +6,11 @@ header {
     max-width: 62.5em;
     min-height: 9.375em;
     margin: 0 auto;
+    border-bottom: .375em solid $theme-blue;
 
     .logo {
       display: inline-block;
-      padding: 4.375em 0;
+      padding: 2.188em 0 0;
     }
 
     nav {
@@ -29,6 +30,10 @@ header {
 
           a {
             text-transform: uppercase;
+            text-decoration: none;
+            font-size: .875em;
+            color: $dark-gray;
+            font-weight: $bold;
           }
 
           ul {
