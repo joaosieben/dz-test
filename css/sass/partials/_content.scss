@@ -1,0 +1,24 @@
+#content {
+  .content-item {
+    display: inline-block;
+    max-width: 33%;
+
+    .mask {
+      border: 6px solid $theme-blue;
+      border-radius: 50%;
+      width: 14em;
+      height: 14em;
+      margin: 0 auto;
+      padding: 5px;
+      position: relative;
+
+      img {
+        -webkit-clip-path: circle(7em at 50% 50%);
+        clip-path: circle(7em at 50% 50%);
+        position: absolute;
+        left: -3.875em;
+        top: -.125em;
+      }
+    }
+  }
+}

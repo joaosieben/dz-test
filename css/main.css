@@ -469,7 +469,6 @@ header .wrapper nav {
   display: inline-block;
   float: right;
   padding: 4.375em 0;
-  width: 60%;
 }
 header .wrapper nav:after {
   content: "";
@@ -598,6 +597,37 @@ header .wrapper nav ul li ul li a:hover {
   right: 2.5em;
   transform: rotate(180deg);
 }
+#hero .triangle {
+  position: absolute;
+  bottom: 2.75em;
+  right: 0;
+  width: 100%;
+  height: 16.5em;
+  background: #e7e7e0;
+  -webkit-clip-path: polygon(100% 35%, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 35%, 0% 100%, 100% 100%);
+}
+
+#content .content-item {
+  display: inline-block;
+  max-width: 33%;
+}
+#content .content-item .mask {
+  border: 6px solid #38c1c8;
+  border-radius: 50%;
+  width: 14em;
+  height: 14em;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
+#content .content-item .mask img {
+  -webkit-clip-path: circle(7em at 50% 50%);
+  clip-path: circle(7em at 50% 50%);
+  position: absolute;
+  left: -3.875em;
+  top: -.125em;
+}
 
 body {
   background: #e7e7e0;
@@ -612,10 +642,15 @@ h1 {
 
 h2 {
   font-size: 2.5em;
+  margin: 3.75em 0;
+  font-weight: 700;
+  text-align: center;
 }
 
 h3 {
   font-size: 1.375em;
+  font-weight: 700;
+  margin: 1.25em 0;
 }
 
 h1,
