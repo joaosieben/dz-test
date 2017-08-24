@@ -17,6 +17,7 @@ header {
       display: inline-block;
       float: right;
       padding: 4.375em 0;
+      width: 60%;
 
       &:after {
         content: "";
@@ -25,21 +26,77 @@ header {
       }
 
       ul {
+        z-index: 999;
+
         li {
           display: inline-block;
+          position: relative;
+          padding: 1.25em 3.238em 1.35em 0.95em;
+
+          &.submenu {
+            border: 1px solid $theme-white;
+            &:hover {
+              border-color: #ebebeb;
+            }
+
+            &:after {
+              content: "";
+              width: 1.25em;
+              height: .75em;
+              display: block;
+              position: absolute;
+              right: 1.25em;
+              top: 50%;
+              transform: translateY(-50%);
+              background: url('img/arrow-down.png') center center no-repeat;
+            }
+          }
 
           a {
+            font-weight: $medium;
             text-transform: uppercase;
             text-decoration: none;
             font-size: .875em;
             color: $dark-gray;
-            font-weight: $bold;
+          }
+
+          &:hover {
+            a {
+              color: $theme-blue;
+            }
+            ul {
+              display: block;
+
+
+              li {
+                a {
+                  color: $dark-gray;
+                }
+              }
+            }
           }
 
           ul {
+            top: 3.125em;
+            left: -1px;
+            width: 100%;
+            display: none;
+            position: absolute;
+            background: $theme-white;
+            border: 1px solid #ebebeb;
+            border-top: none;
+
             li {
+              padding: .625em 0 .625em .95em;
+              display: block;
+
               a {
+                font-weight: $regular;
                 text-transform: none;
+
+                &:hover {
+                  color: $theme-blue;
+                }
               }
             }
           }

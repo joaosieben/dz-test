@@ -8,6 +8,7 @@
     <meta name="description" content="Landing Page developed for testing purposes.">
     <meta name="author" content="João Sieben">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" href="main.min.css?v=1.0">
 
     <!--[if lt IE 9]>
@@ -24,26 +25,51 @@
 
         <nav>
           <ul>
-            <li><a href="javascript:void(0)" title="Sobre nós">Sobre Nós</a>
+            <li class="submenu">
+              <a href="javascript:void(0)" title="Sobre nós">Sobre Nós</a>
               <ul>
                 <li><a href="javascript:void(0)" title="Selecionar item 01">Selecionar item 01</a></li>
                 <li><a href="javascript:void(0)" title="Ou item 02">Ou item 02</a></li>
                 <li><a href="javascript:void(0)" title="Selecionar esse">Selecionar esse</a></li>
                 <li><a href="javascript:void(0)" title="Ou esse">Ou esse</a></li>
               </ul>
-            </li>
-            <li><a href="javascript:void(0)" title="Destinos">Destinos</a></li>
-            <li><a href="javascript:void(0)" title="Acomodações">Acomodações</a></li>
-            <li><a href="javascript:void(0)" title="Contato">Contato</a></li>
+            </li> <!-- .submenu -->
+            <li class="submenu">
+              <a href="javascript:void(0)" title="Destinos">Destinos</a>
+              <ul>
+                <li><a href="javascript:void(0)" title="Selecionar item 01">Selecionar item 01</a></li>
+                <li><a href="javascript:void(0)" title="Ou item 02">Ou item 02</a></li>
+                <li><a href="javascript:void(0)" title="Selecionar esse">Selecionar esse</a></li>
+                <li><a href="javascript:void(0)" title="Ou esse">Ou esse</a></li>
+              </ul>
+            </li> <!-- .submenu -->
+            <li class="submenu">
+              <a href="javascript:void(0)" title="Acomodações">Acomodações</a>
+              <ul>
+                <li><a href="javascript:void(0)" title="Selecionar item 01">Selecionar item 01</a></li>
+                <li><a href="javascript:void(0)" title="Ou item 02">Ou item 02</a></li>
+                <li><a href="javascript:void(0)" title="Selecionar esse">Selecionar esse</a></li>
+                <li><a href="javascript:void(0)" title="Ou esse">Ou esse</a></li>
+              </ul>
+            </li> <!-- .submenu -->
+            <li class="submenu">
+              <a href="javascript:void(0)" title="Contato">Contato</a>
+              <ul>
+                <li><a href="javascript:void(0)" title="Selecionar item 01">Selecionar item 01</a></li>
+                <li><a href="javascript:void(0)" title="Ou item 02">Ou item 02</a></li>
+                <li><a href="javascript:void(0)" title="Selecionar esse">Selecionar esse</a></li>
+                <li><a href="javascript:void(0)" title="Ou esse">Ou esse</a></li>
+              </ul>
+            </li> <!-- .submenu -->
           </ul>
         </nav>
 
       </div> <!-- .wrapper -->
     </header>
 
-    <div id="content">
+    <section id="hero">
 
-      <section id="hero">
+      <div class="carousel">
         <div class="slide-1">
           <h1>Melhores Destinos</h1>
 
@@ -55,8 +81,15 @@
 
           <h4>O comprometimento entre as equipes não pode mais se dissociar dos índices pretendidos. Percebemos, cada vez mais, que o surgimento do comércio virtual causa impacto indireto na reavaliação das posturas.</h4>
         </div> <!-- .slide-2 -->
+      </div> <!-- .carousel -->
+      
+      <!-- Arrows elements, for carousel navigation -->
+      <div class="prev"></div>
+      <div class="next"></div>
 
-      </section> <!-- #hero -->
+    </section> <!-- #hero -->
+
+    <div id="content">
 
       <section id="first">
         <h2>o que você procura?</h2>
@@ -155,6 +188,8 @@
       </div> <!-- .legal -->
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="main.min.js"></script>
   </body>
 </html>

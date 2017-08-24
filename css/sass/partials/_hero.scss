@@ -1,0 +1,62 @@
+#hero {
+  text-align: center;
+  position: relative;
+  width: 100%;
+
+  .slick-list {
+    width: 100%;
+    top: -2.75em;
+  }
+
+  .slide-1 {
+    background: url('img/slide-1.jpg') center top no-repeat;
+  }
+  .slide-2 {
+    background: url('img/slide-2.jpg') center top no-repeat;
+  }
+  .slide-1,
+  .slide-2 {
+    background-size: cover;
+    min-height: 36.563em;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      margin: 2.133em 0 .667em;
+      border: 6px solid #fff;
+      padding: .683em .367em .733em;
+      max-width: 10.667em;
+      display: inline-block;
+    }
+
+    h4 {
+      color: #fff;
+      text-transform: none;
+      font-size: 1em;
+      max-width: 26.25em;
+      font-family: $roboto;
+      font-weight: $light;
+      line-height: 130%;
+      margin: 0 auto;
+    }
+  }
+
+  .next,
+  .prev {
+    width: 19px;
+    height:  34px;
+    display: block;
+    position: absolute;
+    background: url('img/carousel-arrow.png') center center no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .prev {
+    left: 2.5em;
+  }
+  .next {
+    right: 2.5em;
+    transform: rotate(180deg);
+  }
+}
