@@ -1,0 +1,60 @@
+footer {
+  min-height: 4.375em;
+  max-width: 63.438em;
+  margin: 0 auto;
+  line-height: 4.375em;
+
+  a {
+    color: $dark-gray;
+    font-size: .875em;
+    font-family: $lato;
+    font-weight: $light;
+    text-decoration: none;
+  }
+
+  .social,
+  .legal {
+    display: inline-block;
+  }
+
+  .social {
+    a {
+      &.fb:before,
+      &.tw:before,
+      &.ig:before {
+        content: "";
+        display: inline-block;
+        margin: 0 .938em 0 1.250em;
+        vertical-align: text-bottom;
+      }
+      &.fb:before {
+        width: 9px;
+        height: 20px;
+        background: url('img/fb.png') center center no-repeat;
+      }
+      &.tw:before {
+        width: 21px;
+        height: 17px;
+        background: url('img/tw.png') center center no-repeat;
+      }
+      &.ig:before {
+        width: 19px;
+        height: 20px;
+        background: url('img/ig.png') center center no-repeat;
+      }
+    }
+  }
+
+  .legal {
+    float: right;
+    font-size: .75em;
+    font-family: $lato;
+    font-weight: $light;
+    color: $dark-gray;
+
+    img {
+      vertical-align: middle;
+      margin: 0 .625em;
+    }
+  }
+}

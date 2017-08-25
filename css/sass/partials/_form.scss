@@ -1,0 +1,88 @@
+#form {
+  position: relative;
+  background: $theme-blue;
+  margin: 12.813em 0 0;
+  padding: 0 0 4.688em;
+
+  h2,
+  h3 {
+    color: #fff;
+    font-family: $open-sans;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3em;
+    font-weight: $bold;
+    margin: .333em 0;
+    padding: 0;
+  }
+  h3 {
+    font-size: 1em;
+    font-weight: $regular;
+    text-transform: none;
+    margin: 0;
+  }
+
+  form {
+    max-width: 34.688em;
+    margin: 2.813em auto 0;
+
+    .input-border {
+      width: 100%;
+      border: 2px solid #fff;
+      margin: 1.375em 0;
+      padding: .625em 1.125em;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    label,
+    textarea {
+      font-size: .75em;
+      text-transform: uppercase;
+      font-family: $roboto;
+      font-weight: $medium;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea {
+      background: $theme-blue;
+      border: none;
+      color: $dark-blue;
+      outline: none;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel], {
+      width: 90%;
+    }
+
+    input[type=tel] {
+      width: 85%;
+    }
+
+    input[type=submit] {
+      display: block;
+      margin: 0 auto;
+    }
+
+    textarea {
+      min-height: 8.125em;
+      resize: none;
+      width: 100%;
+    }
+
+    label {
+      color: #fff;
+
+      &[for=msg] {
+        vertical-align: top;
+        display: block;
+      }
+    }
+  }
+}
